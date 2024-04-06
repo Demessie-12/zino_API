@@ -13,7 +13,7 @@ connectDB();
 // Middlewares
 app.use(express.json()); // it is custo middleware from expres to access req.body json data
 app.use(express.urlencoded({ extended: false }));
-app.use(taskRoutes);
+app.use(taskRoutes); // middleware which point to taskRoutes
 
 // Routers
 app.get("/", (req, res) => {
